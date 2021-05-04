@@ -35,11 +35,59 @@ const colors = {
 };
 
 module.exports = {
-   purge: [],
+   purge: {
+      content: ["./src/**/*.html", "./src/**/*.vue"],
+      options: {
+         safelist: [
+            ...Object.keys(colors).map((key) => `bg-${key}`),
+            ...Object.keys(colors).map((key) => `text-${key}`),
+         ],
+      },
+   },
    darkMode: false, // or 'media' or 'class'
    theme: {
       colors,
-      extend: {},
+      extend: {
+         fontFamily: {
+            // don't forget to include font to  html header
+            default: ["Montserrat", ...defaultTheme.fontFamily.sans],
+            lato: ["Lato", ...defaultTheme.fontFamily.sans],
+         },
+      },
+      screens: {
+         sm: "600px",
+         md: "1024px",
+         lg: "1440px",
+         xl: "1920px",
+      },
+      fontSize: {
+         h1: "6rem", // 96px @16
+         h2: "4rem", // 64px @16
+         h3: "3rem", // 48px @16
+         h4: "2rem", // 32px @16
+         h5: "1.5rem", // 24px @16
+         h6: "1.25rem", // 20px @16
+         body: "1rem", // 16px @16
+         body2: ".875rem", // 14px @16
+         caption: ".75rem", // 12px @16
+         caption2: ".625rem", // 10px @16
+         18: "1.125rem", // 18px @16
+         36: "2.25rem", // 36px @16
+      },
+      boxShadow: {
+         none: "none",
+         sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+         default:
+            "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+         md:
+            "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+         lg:
+            "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+         xl:
+            "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+         "quasar-style":
+            "rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px",
+      },
    },
    variants: {
       extend: {},
