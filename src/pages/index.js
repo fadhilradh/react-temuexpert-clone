@@ -7,7 +7,7 @@ const HomePage = () => {
          >
             <span className="md:w-1/3 w-full text-center md:text-left">
                <div className="text-h3 md:text-h2 text-bold text-primary mb-10 md:leading-tight">
-                  Temukan Solusi dari Para Expert
+                  Temukan Solusi dari Para Expert Kami
                </div>
                <div className="text-h6 md:text-h5">
                   Nikmati kemudahan akses untuk berkonsultasi dengan expert dari
@@ -41,7 +41,7 @@ const HomePage = () => {
                >
                   <div
                      class="flex items-center justify-center border-blue-600 border rounded-full
-                    -16 w-16 font-bold text-h4 text-secondary"
+                    h-16 w-16 font-bold text-h4 text-secondary"
                   >
                      {}
                   </div>
