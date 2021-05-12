@@ -26,71 +26,73 @@ const HomePage = () => {
             ></img>
          </section>
 
-         <section class="flex flex-col md:flex-row full-width justify-center mb-16 md:mb-36 max-w-screen-xl">
-            <div class="text-h4 mb-12 w-full text-center px-10">
+         <section className="flex flex-col md:flex-row full-width justify-center mb-16 md:mb-36 max-w-screen-xl">
+            <div className="text-h4 mb-12 w-full text-center px-10">
                <span>Cukup 3 Langkah </span>
-               <span class="text-primary text-bold">Mudah</span>
+               <span className="text-primary text-bold">Mudah</span>
             </div>
-            <div class="flex sm:flex-row flex-col md:w-3/4 w-full justify-around text-center">
+            <div className="flex sm:flex-row flex-col md:w-3/4 w-full justify-around text-center">
                <div
                   v-for="(step,index) in stepsDetail"
-                  class="flex flex-col items-center md:w-1/4 w-full mb-16"
+                  className="flex flex-col items-center md:w-1/4 w-full mb-16"
                >
                   <div
-                     class="flex items-center justify-center border-blue-600 border rounded-full
+                     className="flex items-center justify-center border-blue-600 border rounded-full
                     h-16 w-16 font-bold text-h4 text-secondary"
                   ></div>
                   <img
                      alt="Temu Expert Steps"
                      src="step.src"
-                     class="my-4 w-1/2 md:w-full"
+                     className="my-4 w-1/2 md:w-full"
                   />
-                  <div class="text-18 text-center md:w-full w-2/3">{}</div>
+                  <div className="text-18 text-center md:w-full w-2/3">{}</div>
                </div>
             </div>
          </section>
 
-         <section class="flex flex-col md:flex-row items-center justify-around mx-auto w-5/6 max-w-screen-xl md:pl-24">
-            <span class="flex justify-end w-full md:w-1/6 md:mb-none md:mt-3 mb-16 text-h4 md:text-36">
-               <div class="text-center md:text-right font-semibold mb-2">
+         <section className="flex flex-col md:flex-row items-center justify-around mx-auto w-5/6 max-w-screen-xl md:pl-24">
+            <span className="flex justify-end w-full md:w-1/6 md:mb-none md:mt-3 mb-16 text-h4 md:text-36">
+               <div className="text-center md:text-right font-semibold mb-2">
                   {" "}
                   Mengapa Memilih TemuExpert?
                </div>
-               <div class="w-1/4 md:w-1/2 h-2 rounded-xl bg-primary mx-auto md:m-0" />
+               <div className="w-1/4 md:w-1/2 h-2 rounded-xl bg-primary mx-auto md:m-0" />
             </span>
-            <span class="reasons-container">
+            <span className="reasons-container">
                <div
                   v-for="(reason,index) in temuExpertReasons"
                   key="index"
-                  class="flex flex-col md:flex-row md:w-1/2 w-full items-center text-center md:text-left"
+                  className="flex flex-col md:flex-row md:w-1/2 w-full items-center text-center md:text-left"
                >
-                  <div class=" bg-white w-1/4 md:w-1/5 rounded-xl shadow-xl md:shadow-lg reason-icon">
+                  <div className=" bg-white w-1/4 md:w-1/5 rounded-xl shadow-xl md:shadow-lg reason-icon">
                      <img src="reason" alt="reasons"></img>
                   </div>
-                  <div class="md:w-2/3 w-full pt-10 px-6 pb-6 md:p-6 bg-white shadow-xl rounded-lg">
-                     <div class="mb-1">
-                        <span class="text-h6 md:text-h5 font-bold">{}</span>
+                  <div className="md:w-2/3 w-full pt-10 px-6 pb-6 md:p-6 bg-white shadow-xl rounded-lg">
+                     <div className="mb-1">
+                        <span className="text-h6 md:text-h5 font-bold">{}</span>
                      </div>
-                     <div class="text-body md:text-18 text-gray-500">{}</div>
+                     <div className="text-body md:text-18 text-gray-500">
+                        {}
+                     </div>
                   </div>
                </div>
             </span>
          </section>
 
          <div
-            class="w-full h-full mt-36 md:mt-48 pb-36 bg-no-repeat
+            className="w-full h-full mt-36 md:mt-48 pb-36 bg-no-repeat
       bg-map-texture bg-contain md:bg-cover bg-center max-w-screen-xl"
          >
-            <div class="flex justify-center items-center">
-               <div class="text-h4 md:mb-8 mb-12 md:w-full w-2/3 text-center">
+            <div className="flex justify-center items-center">
+               <div className="text-h4 md:mb-8 mb-12 md:w-full w-2/3 text-center">
                   <span>Expert dengan Pengalaman </span>
-                  <span class="text-primary">Beragam</span>
+                  <span className="text-primary">Beragam</span>
                </div>
-               <div class="w-3/5 h-20 text-18 text-center mb-4 md:mb-0">
+               <div className="w-3/5 h-20 text-18 text-center mb-4 md:mb-0">
                   <span>Kami </span>
-                  <span class="text-primary">menghubungkan Anda </span>
+                  <span className="text-primary">menghubungkan Anda </span>
                   <span>dengan para </span>
-                  <span class="text-primary">Expert yang tersebar </span>
+                  <span className="text-primary">Expert yang tersebar </span>
                   <span>
                      di seluruh Indonesia dengan beragam latar belakang keahlian
                   </span>
