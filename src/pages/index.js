@@ -49,6 +49,55 @@ const HomePage = () => {
                </div>
             </div>
          </section>
+
+         <section class="flex flex-col md:flex-row items-center justify-around mx-auto w-5/6 max-w-screen-xl md:pl-24">
+            <span class="flex justify-end w-full md:w-1/6 md:mb-none md:mt-3 mb-16 text-h4 md:text-36">
+               <div class="text-center md:text-right font-semibold mb-2">
+                  {" "}
+                  Mengapa Memilih TemuExpert?
+               </div>
+               <div class="w-1/4 md:w-1/2 h-2 rounded-xl bg-primary mx-auto md:m-0" />
+            </span>
+            <span class="reasons-container">
+               <div
+                  v-for="(reason,index) in temuExpertReasons"
+                  key="index"
+                  class="flex flex-col md:flex-row md:w-1/2 w-full items-center text-center md:text-left"
+               >
+                  <div class=" bg-white w-1/4 md:w-1/5 rounded-xl shadow-xl md:shadow-lg reason-icon">
+                     <img src="reason" alt="reasons"></img>
+                  </div>
+                  <div class="md:w-2/3 w-full pt-10 px-6 pb-6 md:p-6 bg-white shadow-xl rounded-lg">
+                     <div class="mb-1">
+                        <span class="text-h6 md:text-h5 font-bold">{}</span>
+                     </div>
+                     <div class="text-body md:text-18 text-gray-500">{}</div>
+                  </div>
+               </div>
+            </span>
+         </section>
+
+         <div
+            class="w-full h-full mt-36 md:mt-48 pb-36 bg-no-repeat
+      bg-map-texture bg-contain md:bg-cover bg-center max-w-screen-xl"
+         >
+            <div class="flex justify-center items-center">
+               <div class="text-h4 md:mb-8 mb-12 md:w-full w-2/3 text-center">
+                  <span>Expert dengan Pengalaman </span>
+                  <span class="text-primary">Beragam</span>
+               </div>
+               <div class="w-3/5 h-20 text-18 text-center mb-4 md:mb-0">
+                  <span>Kami </span>
+                  <span class="text-primary">menghubungkan Anda </span>
+                  <span>dengan para </span>
+                  <span class="text-primary">Expert yang tersebar </span>
+                  <span>
+                     di seluruh Indonesia dengan beragam latar belakang keahlian
+                  </span>
+               </div>
+               <home-page-carousel displayed-experts="displayedExperts" />
+            </div>
+         </div>
       </div>
    );
 };
