@@ -27,10 +27,7 @@ const HomePage = () => {
          </section>
 
          <section class="flex flex-col md:flex-row full-width justify-center mb-16 md:mb-36 max-w-screen-xl">
-            <div
-               class="text-h4 mb-12 w-full text-center px-10"
-               id="temuExpertSteps"
-            >
+            <div class="text-h4 mb-12 w-full text-center px-10">
                <span>Cukup 3 Langkah </span>
                <span class="text-primary text-bold">Mudah</span>
             </div>
@@ -42,10 +39,12 @@ const HomePage = () => {
                   <div
                      class="flex items-center justify-center border-blue-600 border rounded-full
                     h-16 w-16 font-bold text-h4 text-secondary"
-                  >
-                     {}
-                  </div>
-                  <img alt="" src="step.src" class="my-4 w-1/2 md:w-full" />
+                  ></div>
+                  <img
+                     alt="Temu Expert Steps"
+                     src="step.src"
+                     class="my-4 w-1/2 md:w-full"
+                  />
                   <div class="text-18 text-center md:w-full w-2/3">{}</div>
                </div>
             </div>
